@@ -1,5 +1,3 @@
-let indice = 0;
-
 function abrir(refer){
     let aux = document.querySelector('.ventana');
     let aux2 = document.querySelector('.imgzoom');
