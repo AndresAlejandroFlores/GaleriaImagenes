@@ -22,7 +22,7 @@ function atras(){
     do{
         actual = var_atras.children[i].currentSrc;
         temporal = aux2.currentSrc;
-        if (aux2.currentSrc == actual){
+        if (temporal == actual){
             j = i;
             bandera = true;
             console.log("Indice: " + j);
@@ -54,7 +54,7 @@ function adelante(){
     do{
         actual = var_adelante.children[i].currentSrc;
         temporal = aux2.currentSrc;
-        if (aux2.currentSrc == actual){
+        if (temporal == actual){
             j = i;
             bandera = true;
             console.log("Indice: " + j);
