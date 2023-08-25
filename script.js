@@ -20,9 +20,9 @@ function atras(){
     let bandera = false;
     
     do{
-        actual = var_atras.children[i].currentSrc;
-        temporal = aux2.currentSrc;
-        if (temporal == actual){
+        temporal = var_atras.children[i].currentSrc;
+        actual = aux2.currentSrc;
+        if (actual == temporal){
             j = i;
             bandera = true;
         }
@@ -51,9 +51,9 @@ function adelante(){
     let bandera = false;
     
     do{
-        actual = var_adelante.children[i].currentSrc;
-        temporal = aux2.currentSrc;
-        if (temporal == actual){
+        temporal = var_adelante.children[i].currentSrc;
+        actual = aux2.currentSrc;
+        if (actual == temporal){
             j = i;
             bandera = true;
         }
