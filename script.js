@@ -25,7 +25,6 @@ function atras(){
         if (temporal == actual){
             j = i;
             bandera = true;
-            console.log("Indice: " + j);
         }
         i++;
     }while ((i < hijos) && (bandera == false))
@@ -57,7 +56,6 @@ function adelante(){
         if (temporal == actual){
             j = i;
             bandera = true;
-            console.log("Indice: " + j);
         }
         i++;
     }while ((i < hijos) && (bandera == false))
