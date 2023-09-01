@@ -6,19 +6,28 @@
 }
 main{
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 .linea{
     border: 1px black solid;
     margin:4px;
     margin-bottom: 16px;
 }
-a{
+main a{
     text-decoration: none;
     color:white;
-    background-color: lightgray;
-    padding: 8px;
-    margin-bottom: 16px;
+    font-size: 16px;
+    background-color: black;
+    padding: 4px;
     border-radius: 3px;
+    width: 64px;
+    align-self: center;
+}
+main a:hover{
+    color:grey;
+    transition: all .25s ease-in-out;
 }
 .galeria{
     display:flex;
@@ -29,44 +38,52 @@ a{
 }
 
 .galeria img{
-    margin:8px;
-    height: 32%;
-    width: 32%;
+    margin:4px;
+    width: 400px;
     border-radius: 3px;
+    cursor:pointer;
 }
 
-.ventana a{
-    font-size: 32px;
+.ventana p{
+    display: flex;
+    align-self: center;
+}
+.ventana p a{
+    font-size: 16px;
     padding: 4px;
     margin:4px;
     color:white;
     background-color:black;
     border-radius: 3px;
+    width: 64px;
+}
+.ventana p a:hover{
+    color:grey;
+    transition: all .25s ease-in-out;
 }
 
 .galeria img:hover{
-    transform:scale(1.02);
+    opacity: 0.5;
+    transform:scale(1.015);
     transition: all .25s ease-in-out;
 }
 
 .ventana{
     width: 100%;
-    height: 125%;
+    height: 100%;
     padding:8px;
-    background-color: rgba(0,0,0,0.8);
+    background-color: rgba(0,0,0,0.5);
     justify-content: center;
-    border:1px black solid;
     display: none;
-    position: absolute;
-    transition: all 2s ease-in-out;
+    flex-direction: column;
+    justify-content: center;
+    position:fixed;
     z-index: 99;
 }
-.ventana h1{
-    color:white;
-}
+
 .ventana img{
-    width: 76%;
+    width: 80%;
     margin:8px;
     border-radius: 3px;
-    justify-self: center;
+    align-self: center;
 }

@@ -6,22 +6,23 @@
         <title>Galería de Imágenes</title>
         <link rel="stylesheet" type="text/css" href="styles.css"/>
         <script type="text/javascript" src="script.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     </head>
     <body>
         <header></header>
         <nav></nav>
         <main>
             <div class="ventana">
-                <h1>ZOOM</h1>
-                <img class="imgzoom" src="img/anime-japanese-street.jpg" alt="anime-japanese-street.jpg"/>
-                <p></p>
-                <a href="#" onclick="atras()"><</a>
-                <a href="#" onclick="cerrar()">CERRAR</a>
-                <a href="#" onclick="adelante()">></a>
+                <img class="imgzoom" src="img/anime-japanese-street.jpg" alt=""/>
+                <p>
+                    <a href="#" onclick="atras()"><i class="fa-solid fa-angle-left"></i></a>
+                    <a href="#" onclick="cerrar()"><i class="fa-solid fa-xmark"></i></a>
+                    <a href="#" onclick="adelante()"><i class="fa-solid fa-angle-right"></i></a>
+                </p>
             </div>
             <h1>Galería de Imágenes</h1>
             <p class="linea"></p>
-            <a href="#" onclick="abrir('img/anime-japanese-street.jpg')">ZOOM</a>
+            <a href="#" onclick="abrir('img/anime-japanese-street.jpg')"><i class="fa-solid fa-magnifying-glass"></i></a>
             <div class="galeria">
                 <img onclick="abrir(this.src)" src="img/anime-japanese-street.jpg" alt="anime-japanese-street.jpg"/>
                 <img onclick="abrir(this.src)" src="img/singapore-skyline.jpg" alt="singapore-skyline.jpg"/>

@@ -1,12 +1,13 @@
+
 function abrir(refer){
     let aux = document.querySelector('.ventana');
     let aux2 = document.querySelector('.imgzoom');
-    aux.style.display = "block"
+    aux.style.display = "flex";
     aux2.src = refer;
 }
 function cerrar(){
     let aux = document.querySelector('.ventana');
-    aux.style.display = "none"
+    aux.style.display = "none";
 }
 function atras(){
     let var_atras = document.querySelector('.galeria');
@@ -18,10 +19,10 @@ function atras(){
     let i = 0;
     let j = 0;
     let bandera = false;
-    
+
+    actual = aux2.currentSrc;
     do{
         temporal = var_atras.children[i].currentSrc;
-        actual = aux2.currentSrc;
         if (actual == temporal){
             j = i;
             bandera = true;
@@ -49,10 +50,10 @@ function adelante(){
     let i = 0;
     let j = 0;
     let bandera = false;
-    
+
+    actual = aux2.currentSrc;
     do{
         temporal = var_adelante.children[i].currentSrc;
-        actual = aux2.currentSrc;
         if (actual == temporal){
             j = i;
             bandera = true;
