@@ -24,6 +24,7 @@ main a{
     border-radius: 3px;
     width: 64px;
     align-self: center;
+    display: block;
 }
 main a:hover{
     color:grey;
@@ -86,4 +87,31 @@ main a:hover{
     margin:8px;
     border-radius: 3px;
     align-self: center;
+}
+
+@media (max-width:767px){
+    *{
+        font-size: 0.92rem;
+    }
+    main>a{
+        display: none;
+    }
+    .linea{
+        margin-bottom: 2px;
+    }
+    .galeria{
+        margin-top: 0px;
+    }
+    .galeria img{
+        width: 344px;
+    }
+    .ventana img{
+        width: 98%;
+        margin: 4px;
+    }
+    .ventana p a{
+        margin:0px;
+        font-size: 12px;
+    }
+
 }
